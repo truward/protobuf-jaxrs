@@ -4,7 +4,7 @@
   <parent>
     <artifactId>protobuf-jaxrs-root</artifactId>
     <groupId>com.truward.protobuf</groupId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
 
   <artifactId>protobuf-jaxrs</artifactId>
