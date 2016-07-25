@@ -1,2 +1,3 @@
 # protobuf-jaxrs
-Jax RS support for protocol buffers
+
+Jax RS support for protocol buffers.

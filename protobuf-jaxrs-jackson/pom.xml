@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>protobuf-jaxrs-root</artifactId>
+    <groupId>com.truward.protobuf</groupId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>protobuf-jaxrs-jackson</artifactId>
+
+  <name>Protobuf JAX-RS Jackson Marshaller</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.truward.protobuf</groupId>
+      <artifactId>protobuf-jackson</artifactId>
+    </dependency>
+
+    <!--<dependency>-->
+      <!--<groupId>com.truward.protobuf</groupId>-->
+      <!--<artifactId>protobuf-jaxrs</artifactId>-->
+      <!--<version>${project.version}</version>-->
+    <!--</dependency>-->
+
+    <dependency>
+      <groupId>org.jboss.spec.javax.ws.rs</groupId>
+      <artifactId>jboss-jaxrs-api_2.0_spec</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-jaxrs</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
+
