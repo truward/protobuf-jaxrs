@@ -32,11 +32,9 @@ import java.util.concurrent.ConcurrentHashMap;
  * @author Alexander Shabanov
  */
 @Provider
-@Consumes(ProtobufProvider.MIME_PROTOBUF)
-@Produces(ProtobufProvider.MIME_PROTOBUF)
+@Consumes(ProtobufMediaType.MIME)
+@Produces(ProtobufMediaType.MIME)
 public class ProtobufProvider implements MessageBodyReader<Object>, MessageBodyWriter<Object> {
-  public static final String MIME_PROTOBUF = "application/x-protobuf";
-  public static final MediaType PROTOBUF_MEDIA_TYPE = MediaType.valueOf(MIME_PROTOBUF);
 
   private final Map<Class<?>, Method> parseMethods = new ConcurrentHashMap<>();
 
@@ -87,7 +85,7 @@ public class ProtobufProvider implements MessageBodyReader<Object>, MessageBodyW
   //
 
   protected boolean isSupportedMediaType(MediaType mediaType) {
-    return mediaType == null || PROTOBUF_MEDIA_TYPE.isCompatible(mediaType);
+    return mediaType == null || ProtobufMediaType.MEDIA_TYPE.isCompatible(mediaType);
   }
 
   protected Method getParseMethod(Class<?> clazz) {
