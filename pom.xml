@@ -60,7 +60,7 @@
 
   <properties>
     <!-- Dependency Versions-->
-    <protobuf.version>3.0.0-beta-2</protobuf.version>
+    <protobuf.version>3.0.0</protobuf.version>
     <resteasy.version>3.0.18.Final</resteasy.version>
 
     <!--  compiler settings -->
